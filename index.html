@@ -27,7 +27,7 @@
                     <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Link</a>
+                    <a class="nav-link text-light" href="#">About</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,12 +41,12 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled text-light">Disabled</a>
+                    <a class="nav-link disabled text-light">RESERVATION</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Search</button>
+                  <button  onclick="searchOf()" class="btn btn-outline-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -79,6 +79,7 @@
 
     <!-- Carousel end -->
 
+
     <!-- Container, Row, Column, Card, -->
 
     <div class="container my-5">
@@ -89,8 +90,10 @@
                     <div class="card-body">
                       <h5 class="card-title">Pepsi</h5>
                       <p class="card-text">Pepsi was first introduced as "Brad's Drink"[1] in New Bern, North Carolina in 1893 by Caleb Bradham, who made it at his drugstore where the drink was sold.</p>
-                      <a href="#" class="btn btn-danger">if you need it press here</a>
+                      <a href="#" ondblclick="orderPepsi()" class="btn btn-danger">if you need it press here</a>
+                    
                     </div>
+
                   </div>
             </div>
             <div class="col">
@@ -99,17 +102,43 @@
                     <div class="card-body">
                       <h5 class="card-title">Burger</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-danger">if you need it press here</a>
+                      <a href="#" onclick="order()"  class="btn btn-danger">if you need it press here</a>
+                     
                     </div>
                   </div>
             </div>
         </div>
        
     </div>
+    <!-- add info-->
+  
+    <div>
+      <h2>MAKE A RESERVATION</h2>
+      
+      <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputName2">FName</label>
+        <input type="text" onselect="selectt()" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" >
+       
+      
+        <label class="sr-only" for="inlineFormInputName2">  E-mail </label>
+        <input type="email"  onfocus="myFunction(this)" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" >
+        <label class="sr-only" for="inlineFormInputName2">Phone</label>
+        <input type="text" id="ph" onmouseover="document.getElementById('ph').style.color='red'" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" >
+        <label class="sr-only" for="inlineFormInputName2">Date</label>
+        <input type="date" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" >
+      
+        <label class="sr-only" for="inlineFormInputName2">number of person</label>
+        <input type="number"  onchange=" change()" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" >
+      
+      
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
+    </div>
 
 
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/bootstra.js"></script>
     
     
 
